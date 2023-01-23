@@ -1,0 +1,124 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  user-select: none;
+}
+.whole-pages-div {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #2a2a2a;
+  color: white;
+  align-items: center;
+}
+.skor-table {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #3a3a3a;
+  padding: 15px 0px;
+}
+
+.main {
+  width: 90%;
+  padding: 20px;
+  min-height: 80vh;
+  border: 1px solid #3a3a3a;
+  margin-top: 30px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: crosshair;
+  overflow: hidden;
+}
+.btn-oyna,
+.try-game {
+  width: 13rem;
+  padding: 6px 0px;
+  border: 1px solid transparent;
+  outline: none;
+  border-radius: 4px;
+  background-color: #3a3a3a;
+  color: white;
+  font-size: 1.4rem;
+  transition: all 0.2s ease;
+  font-weight: bold;
+}
+.btn-oyna:hover,
+.try-game:hover {
+  border: 1px solid #3a3a3a;
+  background-color: #2f2f2f;
+  cursor: pointer;
+  transform: translateY(-4px);
+  box-shadow: rgba(238, 238, 238, 0.091) 0px 3px 8px;
+}
+.target {
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  border-radius: 200px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 2s ease;
+}
+.target::before {
+  content: "";
+  background-color: white;
+  width: 70%;
+  height: 70%;
+  border-radius: 100px;
+}
+.red-dot {
+  width: 30%;
+  height: 30%;
+  top: 36%;
+  border-radius: 100px;
+  background-color: red;
+  position: absolute;
+}
+.screen-end-whole {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.319);
+  backdrop-filter: blur(4px);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow-y: hidden;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  overflow: hidden;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+.screen-end {
+  width: 1000px;
+  height: 600px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.7em;
+  border-radius: 8px;
+  background-color: #2a2a2acc;
+  box-shadow: rgba(238, 238, 238, 0.29) 0px 3px 8px;
+  transform: translateY(300px);
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+.f-hedef-adet {
+  color: #2b4ba4;
+}
